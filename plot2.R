@@ -4,7 +4,7 @@ fname <- "household_power_consumption.txt"
 
 ##I couldn't figure out how to read the data based on the dates, so I first read only the first 10 rows (I did not include that code here)
 ##Once I knew the start date and time, I calculated that the data for 2/1/2007 started on row 66637
-##And that two days of data would be 2880 rows (60 minutes * 24 hours)
+##And that two days of data would be 2880 rows (60 minutes * 24 hours * 2 day)
 ##read 2880 rows of data, skipping the first 66636 rows
 dat <- read.table(fname, sep = ";", skip = 66636, nrows = 2880, na.strings="?", stringsAsFactors = FALSE)
 ##rename columns (skipping )
